@@ -13,7 +13,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+//        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        custom: ['Rubik', ...defaultTheme.fontFamily.sans],
       },
     },
   },
