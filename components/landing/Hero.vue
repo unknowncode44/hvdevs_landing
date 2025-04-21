@@ -35,7 +35,7 @@
           size="lg"
           styleName="outline"
           rel="noopener"
-          :href="scrollTo(sectionRefEl)"
+          href=""
           target="_blank"
           >Nuestros Productos</LandingLink
         >
