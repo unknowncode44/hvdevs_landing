@@ -1,41 +1,47 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Hosting & SEO",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Alojamiento web confiable y certificado SSL para tu proyecto online. Traé tu web y mejora tu posicionamiento en buscadores web.",
+    icon: "ic:baseline-cloud",
   },
+
   {
-    title: "100% Static HTML, No JS",
+    title: "Web a Medida",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Creamos landing pages impactantes y aplicaciones web potentes para optimizar tus procesos.",
+    icon: "gg:website",
   },
+
   {
-    title: "On-Demand Components",
+    title: "Venta & Gastronomía",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Plataformas e-commerce y herramientas digitales para la gestion de restaurantes. Crea tus productos y vendelos con nosotros.",
+    icon: "famicons:cart",
   },
+
   {
-    title: "Broad Integration",
+    title: "Turnos Médicos",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Te ayudamos a crear tu sistema online para la gestión eficiente de turnos en clínicas y consultorios.",
+    icon: "jam:medical",
   },
+
   {
-    title: "SEO Enabled",
+    title: "Gestión Integral",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Soluciones empresariales para la gestión HSE y RRHH, recibos digitales y gestión de flota en tu empresa.",
+    icon: "ci:settings",
   },
+
   {
-    title: "Community",
+    title: "Features a Medida",
     description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Integramos plataformas de pago y añadimos las características que faltan a tu software para una funcionalidad completa.",
+    icon: "proicons:box-add",
   },
+
 ];
 </script>
 
@@ -44,20 +50,19 @@ const features = [
     <h2 class="text-4xl lg:text-5xl font-regular lg:tracking-tight">
       Todo lo que necesitas para empezar tu proyecto
     </h2>
-    <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+    <p class="text-lg mt-4 text-slate-700 font-thin">
+      Soluciones de software innovadoras y a tu medida: esto es lo que podemos hacer por vos.
     </p>
   </div>
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-    <div v-for="item of features" class="flex gap-4 items-start">
-      <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-        <Icon class="text-white" :name="item.icon" />
+  <div id="feat" class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-10" style="font-family: 'Rubik', sans-serif;">
+    <div v-for="item of features" class="flex gap-4 items-start rounded-md hover:bg-slate-200 p-3">
+      <div class="mt-1 bg-black rounded-full flex justify-center items-center w-10 h-10 shrink-0">
+        <Icon class="text-white" :name="item.icon" size="24"/>
       </div>
       <div>
-        <h3 class="font-semibold text-lg">{{ item.title }}</h3>
-        <p class="text-slate-500 mt-2 leading-relaxed">
+        <h3 class="font-normal text-lg">{{ item.title }}</h3>
+        <p class="text-slate-500 mt-2 leading-relaxed font-light">
           {{ item.description }}
         </p>
       </div>
